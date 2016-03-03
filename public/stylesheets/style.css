@@ -10,6 +10,8 @@ body {
 
 #no {
   position: absolute;
+  top: 20%;
+  left: 20%;
   font-size: 30em;
   cursor: default;
 
