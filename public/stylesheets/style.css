@@ -1,5 +1,5 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Arvo, sans-serif;
 }
 
 #no {
@@ -10,7 +10,8 @@ body {
 
 #no {
   position: absolute;
-  font-size: 20em;
+  font-size: 30em;
+  cursor: default;
 
   -webkit-animation-name: spin;
   -webkit-animation-duration: 4000ms;
@@ -32,14 +33,17 @@ body {
 }
 
 @-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
+    0% { -moz-transform: rotate(-30deg); }
+    50% { -moz-transform: rotate(30deg); }
+    100% { -moz-transform: rotate(-30deg); }
 }
 @-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
+    0% { -webkit-transform: rotate(-30deg); }
+    50% { -webkit-transform: rotate(30deg); }
+    100% { -webkit-transform: rotate(-30deg); }
 }
 @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+    0% { transform: rotate(-30deg); }
+    50% { transform: rotate(30deg); }
+    100% { transform: rotate(-30deg); }
 }
